@@ -2,7 +2,8 @@
 // "Flyweight" Maps and Lists of sample data.
 package com.xforg.utils;
 import java.util.*;
-import static net.mindview.util.Print.*;
+
+import static com.xforg.utils.Print.print;
 
 public class Countries {
   public static final String[][] DATA = {

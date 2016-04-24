@@ -1,6 +1,6 @@
 //: enumerated/menu/Meal2.java
 package com.xforg.enumerated.menu;
-import net.mindview.util.*;
+import com.xforg.utils.Enums;
 
 public enum Meal2 {
   APPETIZER(Food.Appetizer.class),
