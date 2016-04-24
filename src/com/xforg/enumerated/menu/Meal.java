@@ -3,8 +3,8 @@ package com.xforg.enumerated.menu;
 
 public class Meal {
   public static void main(String[] args) {
-    for(int i = 0; i < 5; i++) {
-      for(Course course : Course.values()) {
+    for(int i = 0; i < 9; i++) {
+      for(Course course : Course.values()) {/*通过遍历每一个Course实例来获得“枚举的枚举”的值*/
         Food food = course.randomSelection();
         System.out.println(food);
       }

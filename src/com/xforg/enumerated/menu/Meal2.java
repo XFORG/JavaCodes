@@ -40,4 +40,4 @@ public enum Meal2 {
       System.out.println("---");
     }
   }
-} /* Same output as Meal.java *///:~
+}
