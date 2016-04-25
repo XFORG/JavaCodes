@@ -1,7 +1,6 @@
 package com.xforg.enumerated.menu;
 import java.util.EnumMap;
 import java.util.Map;
-
 import static com.xforg.utils.Print.print;
 import static com.xforg.utils.Print.printnb;
 
