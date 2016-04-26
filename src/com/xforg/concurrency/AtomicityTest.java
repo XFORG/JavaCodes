@@ -2,7 +2,7 @@ package com.xforg.concurrency;//: concurrency/AtomicityTest.java
 import java.util.concurrent.*;
 
 public class AtomicityTest implements Runnable {
-  private int i = 0;
+  private  int i = 0;
   public int getValue() { return i; }
   private synchronized void evenIncrement() {
     i++; i++;
