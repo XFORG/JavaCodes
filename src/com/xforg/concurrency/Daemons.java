@@ -3,7 +3,7 @@ package com.xforg.concurrency;//: concurrency/Daemons.java
 import java.util.concurrent.*;
 import static com.xforg.utils.Print.printnb;
 
-class Daemon implements Runnable {/*Daemon线程被设置为后台模式，然后派生出许多子线程，这个鞋线程并没有被显示的设置为后台模式，不过他们确实是后台线程*/
+class Daemon implements Runnable {/*Daemon线程被设置为后台模式，然后派生出许多子线程，这个线程并没有被显示的设置为后台模式，不过他们确实是后台线程*/
   private Thread[] t = new Thread[10];
   public void run() {
     for(int i = 0; i < t.length; i++) {
