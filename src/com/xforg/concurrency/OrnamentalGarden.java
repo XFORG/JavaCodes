@@ -41,7 +41,8 @@ class Entrance implements Runnable {
 
     public void run() {
         while (!canceled) {
-           synchronized (this){
+           synchronized (this){/*每个Entrance任务都维护着一个本地值number，它包含通过魔哥特定入口的参观者的数量，这提供了对count的
+                               对象的双重检查，以确保其记录的参观者的数量的正确性*/
                 ++number;
             }
             System.out.println(this + "Total:" + count.increment());
