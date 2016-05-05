@@ -13,11 +13,11 @@ class Car{
         notifyAll();
     }
     public synchronized void buffed() throws InterruptedException{
-        while (waxOn == false)
-            wait();
+        waxOn = false;
+        notifyAll();
     }
     public synchronized void waitForWaxing() throws InterruptedException{
-        while (waxOn == true)
+        while (waxOn == true)/*必须用一个检查感兴趣条件的while循环包围wait，并在条件不满足时返回到wait中*/
             wait();/*如果waxOn为true。那么这个调用任务将通过调用wait而被挂起，此时线程被挂起，锁被释放*/
     }
     public synchronized void waitForBuffing() throws InterruptedException{
@@ -74,6 +74,6 @@ public class WaxOMatic{
         exec.execute(new WaxOff(car));
         exec.execute(new WaxOn(car));
         TimeUnit.SECONDS.sleep(5);
-        exec.shutdown();
+        exec.shutdown();/*此时会调用所有由它控制的线程的interrupt*/
     }
 }
