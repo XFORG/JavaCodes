@@ -1,4 +1,4 @@
-package com.xforg.concurrency;//: concurrency/PriorityBlockingQueueDemo.java
+package com.xforg.concurrency;
 import java.util.concurrent.*;
 import java.util.*;
 import static com.xforg.utils.Print.print;
@@ -34,6 +34,7 @@ class PrioritizedTask implements Runnable, Comparable<PrioritizedTask>  {
   public String summary() {
     return "(" + id + ":" + priority + ")";
   }
+
   public static class EndSentinel extends PrioritizedTask {
     private ExecutorService exec;
     public EndSentinel(ExecutorService e) {
