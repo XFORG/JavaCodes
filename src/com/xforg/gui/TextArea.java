@@ -1,11 +1,14 @@
 package com.xforg.gui;
+
 import com.xforg.utils.Countries;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.HashMap;
 import java.util.Map;
+
 import static com.xforg.utils.SwingConsole.run;
 
 /**

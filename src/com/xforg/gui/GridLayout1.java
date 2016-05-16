@@ -1,7 +1,9 @@
 package com.xforg.gui;//: gui/GridLayout1.java
 // Demonstrates GridLayout.
+
 import javax.swing.*;
 import java.awt.*;
+
 import static com.xforg.utils.SwingConsole.run;
 
 public class GridLayout1 extends JFrame {

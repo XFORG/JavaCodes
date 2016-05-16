@@ -1,10 +1,12 @@
 package com.xforg.gui;//: gui/ButtonGroups.java
 // Uses reflection to create groups
 // of different types of AbstractButton.
+
 import javax.swing.*;
-import javax.swing.border.*;
+import javax.swing.border.TitledBorder;
 import java.awt.*;
-import java.lang.reflect.*;
+import java.lang.reflect.Constructor;
+
 import static com.xforg.utils.SwingConsole.run;
 
 public class ButtonGroups extends JFrame {

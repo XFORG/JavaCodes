@@ -1,8 +1,9 @@
 package com.xforg.gui;//: gui/Buttons.java
 // Various Swing buttons.
+
 import javax.swing.*;
-import javax.swing.border.*;
-import javax.swing.plaf.basic.*;
+import javax.swing.border.TitledBorder;
+import javax.swing.plaf.basic.BasicArrowButton;
 import java.awt.*;
 
 import static net.xforg.utils.SwingConsole.run;

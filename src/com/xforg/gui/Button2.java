@@ -1,9 +1,12 @@
 package com.xforg.gui;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+
 import static com.xforg.utils.SwingConsole.run;
+
 /**
  * Created by Administrator on 2016/5/11.
  */

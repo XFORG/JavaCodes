@@ -1,10 +1,13 @@
 package com.xforg.gui;//: gui/ShowAddListeners.java
 // Display the "addXXXListener" methods of any Swing class.
+
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.*;
-import java.lang.reflect.*;
-import java.util.regex.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.lang.reflect.Method;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 import static com.xforg.utils.SwingConsole.run;
 

@@ -1,8 +1,11 @@
 package com.xforg.gui;//: gui/Button2b.java
 // Using anonymous inner classes.
+
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
 import static com.xforg.utils.SwingConsole.run;
 
 public class Button2b extends JFrame {

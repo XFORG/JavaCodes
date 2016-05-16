@@ -1,8 +1,11 @@
 package com.xforg.gui;//: gui/Faces.java
 // Icon behavior in JButtons.
+
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
 import static com.xforg.utils.SwingConsole.run;
 
 public class Faces extends JFrame {
